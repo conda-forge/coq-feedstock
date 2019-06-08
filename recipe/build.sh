@@ -1,3 +1,7 @@
+#!/bin/bash
+
+sed -i.bak "s/CODESIGN=.*/CODESIGN=true/g" Makefile.build
+
 ./configure -prefix=$PREFIX
 
 chmod +w config/coq_config.ml
