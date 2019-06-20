@@ -10,7 +10,7 @@ source:
   sha256: 87251327e8a1e25c6b08b5c0ae8e7cdf3a91a5f30832bbe74ccc4f0bde9618ea
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
   detect_binary_files_with_prefix: False
   binary_relocation: False  # [osx]
@@ -36,8 +36,8 @@ test:
 
 about:
   home: https://coq.inria.fr
-  license: MIT
-  license_family: MIT
+  license: LGPL-2.1
+  license_family: LGPL
   license_file: LICENSE
   summary: 'Coq is a formal proof management system'
   doc_url: https://coq.inria.fr/documentation
