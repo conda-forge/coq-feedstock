@@ -3,7 +3,7 @@ About coq
 
 Home: https://coq.inria.fr
 
-Package license: MIT
+Package license: LGPL-2.1
 
 Feedstock license: BSD 3-Clause
 
