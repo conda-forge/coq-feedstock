@@ -1,5 +1,5 @@
 {% set name = "coq" %}
-{% set version = "8.9.1" %}
+{% set version = "8.10.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/coq/coq/archive/V{{ version }}.tar.gz
-  sha256: 87251327e8a1e25c6b08b5c0ae8e7cdf3a91a5f30832bbe74ccc4f0bde9618ea
+  sha256: 693c188f045d21f83114239dbb8af8def01b42a157c7d828087d055c32ec6e86
 
 build:
-  number: 1
+  number: 0
   skip: True  # [win]
   detect_binary_files_with_prefix: False
   binary_relocation: False  # [osx]
