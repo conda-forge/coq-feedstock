@@ -10,7 +10,7 @@ source:
   sha256: eea101eff5217dba6d11a8eb13033ed62acb4ee8a64d5cb15fd142e7fc5dc248
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
   detect_binary_files_with_prefix: False
   binary_relocation: False  # [osx]
@@ -20,12 +20,10 @@ requirements:
     - ocaml
     - ocaml-findlib
     - ocaml-num
-    - ocaml-camlp5
   run:
     - ocaml
     - ocaml-findlib
     - ocaml-num
-    - ocaml-camlp5
 
 test:
   source_files:
