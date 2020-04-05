@@ -34,7 +34,7 @@ test:
 
 about:
   home: https://coq.inria.fr
-  license: LGPL-2.1
+  license: LGPL-2.1-only
   license_family: LGPL
   license_file: LICENSE
   summary: Coq is a formal proof management system
