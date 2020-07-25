@@ -5,7 +5,7 @@ Home: https://coq.inria.fr
 
 Package license: LGPL-2.1-only
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Coq is a formal proof management system
 
