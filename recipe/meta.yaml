@@ -19,11 +19,11 @@ requirements:
   host:
     - ocaml
     - ocaml-findlib
-    - ocaml-num
+    - ocaml-zarith
   run:
-    - ocaml
-    - ocaml-findlib
-    - ocaml-num
+    - {{ pin_compatible("ocaml", max_pin="x.x") }}
+    - {{ pin_compatible("ocaml-findlib", max_pin="x.x") }}
+    - {{ pin_compatible("ocaml-zarith", max_pin="x.x") }}
 
 test:
   source_files:
