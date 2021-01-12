@@ -20,6 +20,7 @@ requirements:
     - ocaml
     - ocaml-findlib
     - ocaml-zarith
+    - gmp
   run:
     - {{ pin_compatible("ocaml", max_pin="x.x") }}
     - {{ pin_compatible("ocaml-findlib", max_pin="x.x") }}
