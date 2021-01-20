@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sed -i.bak "s/CODESIGN=.*/CODESIGN=true/g" Makefile.build
+export LIBRARY_PATH=$PREFIX/lib
 
 ./configure -prefix=$PREFIX
 
