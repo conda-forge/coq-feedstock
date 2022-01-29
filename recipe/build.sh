@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sed -i.bak "s/CODESIGN=.*/CODESIGN=true/g" Makefile.build
-sed -i.bak 's/$(LINKMETADATA)/$(LINKMETADATA) '"-cclib -L$PREFIX/lib -cclib -Wl,-rpath,$PREFIX/lib" Makefile.build
+sed -i.bak 's@$(LINKMETADATA)@$(LINKMETADATA) '"-cclib -L$PREFIX/lib -cclib -Wl,-rpath,$PREFIX/lib@g" Makefile.build
 export LIBRARY_PATH=$PREFIX/lib
 export DYLD_FALLBACK_LIBRARY_PATH=$PREFIX/lib
 
