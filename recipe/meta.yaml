@@ -16,6 +16,8 @@ build:
   binary_relocation: false  # [osx]
 
 requirements:
+  build:
+    - make  # [linux]
   host:
     - ocaml
     - ocaml-findlib
