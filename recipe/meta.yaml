@@ -1,5 +1,5 @@
 {% set name = "coq" %}
-{% set version = "8.12.2" %}
+{% set version = "8.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/coq/coq/archive/V{{ version }}.tar.gz
-  sha256: 2c57416e3ec737b212610512eae7e40259fb17a4e487b49981556f28838e8b17
+  sha256: 06445dbd6cb3c8a2e4e957dbd12e094d609a62fcb0c8c3cad0cd1fdedda25c9b
 
 build:
   number: 0
@@ -16,14 +16,17 @@ build:
   binary_relocation: false  # [osx]
 
 requirements:
+  build:
+    - make  # [linux]
   host:
     - ocaml
     - ocaml-findlib
-    - ocaml-num
+    - ocaml-zarith
+    - gmp
   run:
-    - ocaml
-    - ocaml-findlib
-    - ocaml-num
+    - {{ pin_compatible("ocaml", max_pin="x.x") }}
+    - {{ pin_compatible("ocaml-findlib", max_pin="x.x") }}
+    - {{ pin_compatible("ocaml-zarith", max_pin="x.x") }}
 
 test:
   source_files:
